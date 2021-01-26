@@ -1,0 +1,7 @@
+# import Checkout from '../fragments/checkout.graphql'
+
+mutation CreateCheckout($orderType: OrderType!, $pricingType: PricingType!) {
+  createCheckout(orderType: $orderType, pricingType: $pricingType) {
+    ...Checkout
+  }
+}

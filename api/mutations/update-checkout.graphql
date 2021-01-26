@@ -1,0 +1,15 @@
+# import Checkout from '../fragments/checkout.graphql'
+
+mutation UpdateCheckout(
+  $checkoutId: ID!
+  $orderType: OrderType!
+  $pricingType: PricingType!
+) {
+  updateCheckout(
+    checkoutId: $checkoutId
+    orderType: $orderType
+    pricingType: $pricingType
+  ) {
+    ...Checkout
+  }
+}

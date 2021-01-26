@@ -1,0 +1,4 @@
+*.d.ts
+__generated__
+next.config.js
+node_modules

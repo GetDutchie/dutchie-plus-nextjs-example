@@ -1,0 +1,11 @@
+schema:
+  - ${NEXT_PUBLIC_DUTCHIE_PLUS_SERVER}:
+    headers:
+      Authorization: Bearer ${NEXT_PUBLIC_DUTCHIE_PLUS_KEY}
+documents: "**/*.graphql"
+plugins:
+  - typescript
+  - typescript-operations
+  - typescript-react-apollo
+cacheDir: __generated__
+respectGitIgnore: true

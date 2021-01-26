@@ -1,0 +1,24 @@
+fragment MenuProduct on Product {
+  brand {
+    name
+  }
+  category
+  description
+  id
+  image
+  name
+  potencyCbd {
+    formatted
+  }
+  potencyThc {
+    formatted
+  }
+  strainType
+  variants {
+    option
+    priceMed
+    priceRec
+    specialPriceMed
+    specialPriceRec
+  }
+}

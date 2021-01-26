@@ -1,0 +1,17 @@
+# import Checkout from '../fragments/checkout.graphql'
+
+mutation AddItemToCheckout(
+  $checkoutId: ID!
+  $productId: ID!
+  $quantity: Int!
+  $option: String!
+) {
+  addItem(
+    checkoutId: $checkoutId
+    productId: $productId
+    quantity: $quantity
+    option: $option
+  ) {
+    ...Checkout
+  }
+}

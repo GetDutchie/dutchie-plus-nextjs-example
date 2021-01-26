@@ -1,0 +1,16 @@
+fragment CheckoutItem on Item {
+  id
+  option
+  product {
+    image
+    name
+    brand {
+      name
+    }
+    variants {
+      option
+      priceRec
+    }
+  }
+  quantity
+}

@@ -1,0 +1,9 @@
+# import MenuProduct from '../fragments/menu-product.graphql'
+
+query HomePageMenu($category: Category) {
+  menu(filter: { category: $category }, pagination: { limit: 6, offset: 0 }) {
+    products {
+      ...MenuProduct
+    }
+  }
+}

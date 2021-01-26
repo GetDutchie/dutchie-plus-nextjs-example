@@ -1,0 +1,7 @@
+# import Checkout from '../fragments/checkout.graphql'
+
+mutation RemoveItemFromCheckout($checkoutId: ID!, $itemId: ID!) {
+  removeItem(checkoutId: $checkoutId, itemId: $itemId) {
+    ...Checkout
+  }
+}

@@ -1,0 +1,11 @@
+# import CheckoutItem from '../fragments/checkout-item.graphql'
+
+fragment Checkout on Checkout {
+  id
+  items {
+    ...CheckoutItem
+  }
+  orderType
+  pricingType
+  redirectUrl
+}
